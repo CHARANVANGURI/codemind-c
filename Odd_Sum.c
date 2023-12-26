@@ -1,15 +1,14 @@
 #include<stdio.h>
-#include<limits.h>
-int main()
-{
-    int n,i;
+int main(){
+    int n,s=0;
     scanf("%d",&n);
-    int arr[n],odd=0;
-    for(i=0;i<n;i++)
-    {
+   int arr[n];
+    for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
-        if(arr[i]%2!=0)
-        odd=odd+arr[i];
-    }
-    printf("%d",odd);
+         if(arr[i]%2==1){
+    s=s+arr[i];
+}                  
+    }       
+   
+printf("%d",s);
 }
